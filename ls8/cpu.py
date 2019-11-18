@@ -18,9 +18,9 @@ JNE = 0b01010110
 
 SP = 7
 
-EQUAL = 0b0
-LESS = 0b0
-GREATER = 0b0
+EQUAL = 0
+LESS = 0
+GREATER = 0
 
 class CPU:
     """Main CPU class."""
@@ -32,7 +32,7 @@ class CPU:
         self.reg = [0] * 8
         self.pc = 0
         self.ir = 0
-        
+
 
     def ram_read(self, index):
         return self.ram[index]
